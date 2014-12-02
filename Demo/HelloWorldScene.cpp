@@ -45,7 +45,7 @@ bool HelloWorld::init()
     texture.push_back("texture_11");
     ResourceLoader::getInstance()->loadTexture(texture, [this, visibleSize, origin](bool success)
     {
-        auto spr = Sprite::createWithSpriteFrameName(“a_sprite_frame.png");
+        auto spr = Sprite::createWithSpriteFrameName("a_sprite_frame.png");
         this->addChild(spr);
         spr->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
     });
